@@ -1,0 +1,23 @@
+{
+  "trigger": "when_item_created",
+  "actions": [
+    {
+      "type": "condition",
+      "expression": "Amount > 5000"
+    },
+    {
+      "type": "approval",
+      "name": "Start and wait for an approval"
+    },
+    {
+      "type": "update_item",
+      "fields": [
+        "Status"
+      ]
+    },
+    {
+      "type": "notify",
+      "channel": "email"
+    }
+  ]
+}

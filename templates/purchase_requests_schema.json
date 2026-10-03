@@ -1,0 +1,39 @@
+{
+  "list": "PurchaseRequests",
+  "columns": [
+    {
+      "name": "Title",
+      "type": "text"
+    },
+    {
+      "name": "Amount",
+      "type": "currency"
+    },
+    {
+      "name": "Department",
+      "type": "choice",
+      "choices": [
+        "Maintenance",
+        "Operations",
+        "IT"
+      ]
+    },
+    {
+      "name": "RequestedBy",
+      "type": "person"
+    },
+    {
+      "name": "Status",
+      "type": "choice",
+      "choices": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    {
+      "name": "ApproverEmail",
+      "type": "text"
+    }
+  ]
+}
